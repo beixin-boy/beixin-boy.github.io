@@ -153,23 +153,75 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-wang" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-python_list" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/12/wang/">python 循环语句</a>
+      <a class="article-title" href="/2018/07/13/python_list/">列表基础</a>
     </h1>
   
 
         
-        <a href="/2018/07/12/wang/" class="archive-article-date">
-  	<time datetime="2018-07-12T07:40:07.391Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-12</time>
+        <a href="/2018/07/13/python_list/" class="archive-article-date">
+  	<time datetime="2018-07-13T06:42:01.067Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-13</time>
 </a>
         
       </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="list-的含义"><a href="#list-的含义" class="headerlink" title="list 的含义"></a>list 的含义</h2><p>list列表，可以存储各种数据类型（数值，字符串，布尔型等）；可以进行删除、修改、增加，长度随之变化；列表是有序的，可以用索引位进行遍历。list1 = [1,’two’,True]</p>
+<h3 id="list-的声明有两种"><a href="#list-的声明有两种" class="headerlink" title="list 的声明有两种"></a>list 的声明有两种</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ ①、声明的同时进行赋值</span><br><span class="line">     list1 = [1,<span class="string">'two'</span>,True]</span><br><span class="line"> ②、声明一个空列表，后续进行添加元素</span><br><span class="line">     list2 = list()  生成的列表里面没有值，长度为0</span><br></pre></td></tr></table></figure>
+<h3 id="列表的"><a href="#列表的" class="headerlink" title="列表的"></a>列表的</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">$ 1）、使用appen()进行增加，在列表的尾部添加一个元素。</span><br><span class="line">        list1 = [1,<span class="string">'two'</span>,True]</span><br><span class="line">        list1.append(3)</span><br><span class="line">        [1, <span class="string">'two'</span>, True, 3]</span><br><span class="line">（2）、使用extend()进行增加，在列表尾部添加一个子列表</span><br><span class="line">        list1 = [1,<span class="string">'two'</span>,True]</span><br><span class="line">        list1.extend([3,4])</span><br><span class="line">        [1, <span class="string">'two'</span>, True, 3, 4]</span><br><span class="line">（3）、使用“+”运算符，连接两个列表，生成一个新的列表。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">（4）、使用insert()（索引位，插入的内容）函数，对列表指定位置插入内容。</span><br><span class="line">         list1 = [1,<span class="string">'two'</span>,True]</span><br><span class="line">         list1.insert([1,<span class="string">'我是插入的'</span>)</span><br><span class="line">         [1, <span class="string">'我是插入的'</span>, <span class="string">'two'</span>, True]</span><br><span class="line">注意：通常使用append和extend来实现添加元素，而insert频繁的插入操作，需要消耗内存来维护索引位的变化。</span><br></pre></td></tr></table></figure>
+<h3 id="列表的修改"><a href="#列表的修改" class="headerlink" title="列表的修改"></a>列表的修改</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ 通过索引位查到指定的元素，进行修改</span><br><span class="line">    list1 = [1,2,3,5]</span><br><span class="line">    list1[3]= 4</span><br><span class="line">    [1,2,3,4]</span><br></pre></td></tr></table></figure>
+<h3 id="列表的删除"><a href="#列表的删除" class="headerlink" title="列表的删除"></a>列表的删除</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ （1）、remove(要删除的元素)移除在列表中指定的元素</span><br><span class="line">    list1.remove(元素)</span><br><span class="line">（2）、pop()有两种使用（pop（）可以将移除的元素返回）</span><br><span class="line">    list1.pop() 缺省情况下，从列表的尾部弹出一个元素，列表为空，执行pop（）会报错，提示</span><br><span class="line">    列表为空</span><br><span class="line">    返回值：返回弹出的元素</span><br><span class="line">    list1.pop（index）弹出指定位置的元素</span><br><span class="line">（3）、del 删除列表的指定元素或列表本身</span><br><span class="line">         del list[索引位]</span><br><span class="line">        list2 = [1,2,3,4,5,6,7]</span><br><span class="line">        del list2[3:5]</span><br><span class="line">        [1, 2, 3, 6, 7]</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/13/python_list/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-wang" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
