@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="贝心">
 <meta property="og:description" content="list 的含义list列表，可以存储各种数据类型（数值，字符串，布尔型等）；可以进行删除、修改、增加，长度随之变化；列表是有序的，可以用索引位进行遍历。list1 = [1,’two’,True] list 的声明有两种1234①、声明的同时进行赋值     list1 = [1,&apos;two&apos;,True] ②、声明一个空列表，后续进行添加元素     list2 = list()  生成的列表里面">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-16T08:23:58.957Z">
+<meta property="og:updated_time" content="2018-07-16T12:18:20.507Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="列表和元组基础">
 <meta name="twitter:description" content="list 的含义list列表，可以存储各种数据类型（数值，字符串，布尔型等）；可以进行删除、修改、增加，长度随之变化；列表是有序的，可以用索引位进行遍历。list1 = [1,’two’,True] list 的声明有两种1234①、声明的同时进行赋值     list1 = [1,&apos;two&apos;,True] ②、声明一个空列表，后续进行添加元素     list2 = list()  生成的列表里面">
@@ -196,7 +196,9 @@ sum(元组):返回元组中所有元素之和
 (3)、将列表转化为元组
 list1 = [1,2,3]
 tuple1 = tuple(list1)=&gt;(1,2,3)
+
 </code></pre>
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p><code>`</code> bash<br>将二维列表的所有元素遍历出来<br>li = [1,3,4,’alex’,[3,7,8,’taibai’],5,’ritian’]<br>for i in range (len(li)):<br>    if type(li[i]) ==list :  #使用type()函数判断是否为列表类型<br>        list1 = li[i]<br>        for k in li[i]:      #如果是则使用for循环遍历出二维列表的内容<br>            print(k)<br>    else:<br>        print(li[i])</p>
 
       
 
