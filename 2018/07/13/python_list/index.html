@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>列表基础 | 贝心</title>
+  <title>列表和元组基础 | 贝心</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="list 的含义list列表，可以存储各种数据类型（数值，字符串，布尔型等）；可以进行删除、修改、增加，长度随之变化；列表是有序的，可以用索引位进行遍历。list1 = [1,’two’,True] list 的声明有两种1234$ ①、声明的同时进行赋值     list1 = [1,&apos;two&apos;,True] ②、声明一个空列表，后续进行添加元素     list2 = list()  生成的列表">
+  <meta name="description" content="list 的含义list列表，可以存储各种数据类型（数值，字符串，布尔型等）；可以进行删除、修改、增加，长度随之变化；列表是有序的，可以用索引位进行遍历。list1 = [1,’two’,True] list 的声明有两种1234①、声明的同时进行赋值     list1 = [1,&apos;two&apos;,True] ②、声明一个空列表，后续进行添加元素     list2 = list()  生成的列表里面">
 <meta name="keywords" content="python、爬虫、大数据">
 <meta property="og:type" content="article">
-<meta property="og:title" content="列表基础">
+<meta property="og:title" content="列表和元组基础">
 <meta property="og:url" content="http://yoursite.com/2018/07/13/python_list/index.html">
 <meta property="og:site_name" content="贝心">
-<meta property="og:description" content="list 的含义list列表，可以存储各种数据类型（数值，字符串，布尔型等）；可以进行删除、修改、增加，长度随之变化；列表是有序的，可以用索引位进行遍历。list1 = [1,’two’,True] list 的声明有两种1234$ ①、声明的同时进行赋值     list1 = [1,&apos;two&apos;,True] ②、声明一个空列表，后续进行添加元素     list2 = list()  生成的列表">
+<meta property="og:description" content="list 的含义list列表，可以存储各种数据类型（数值，字符串，布尔型等）；可以进行删除、修改、增加，长度随之变化；列表是有序的，可以用索引位进行遍历。list1 = [1,’two’,True] list 的声明有两种1234①、声明的同时进行赋值     list1 = [1,&apos;two&apos;,True] ②、声明一个空列表，后续进行添加元素     list2 = list()  生成的列表里面">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-16T02:25:04.433Z">
+<meta property="og:updated_time" content="2018-07-16T08:23:58.957Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="列表基础">
-<meta name="twitter:description" content="list 的含义list列表，可以存储各种数据类型（数值，字符串，布尔型等）；可以进行删除、修改、增加，长度随之变化；列表是有序的，可以用索引位进行遍历。list1 = [1,’two’,True] list 的声明有两种1234$ ①、声明的同时进行赋值     list1 = [1,&apos;two&apos;,True] ②、声明一个空列表，后续进行添加元素     list2 = list()  生成的列表">
+<meta name="twitter:title" content="列表和元组基础">
+<meta name="twitter:description" content="list 的含义list列表，可以存储各种数据类型（数值，字符串，布尔型等）；可以进行删除、修改、增加，长度随之变化；列表是有序的，可以用索引位进行遍历。list1 = [1,’two’,True] list 的声明有两种1234①、声明的同时进行赋值     list1 = [1,&apos;two&apos;,True] ②、声明一个空列表，后续进行添加元素     list2 = list()  生成的列表里面">
   
     <link rel="alternative" href="/atom.xml" title="贝心" type="application/atom+xml">
   
@@ -162,7 +162,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      列表基础
+      列表和元组基础
     </h1>
   
 
@@ -176,13 +176,27 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="list-的含义"><a href="#list-的含义" class="headerlink" title="list 的含义"></a>list 的含义</h2><p>list列表，可以存储各种数据类型（数值，字符串，布尔型等）；可以进行删除、修改、增加，长度随之变化；列表是有序的，可以用索引位进行遍历。list1 = [1,’two’,True]</p>
-<h3 id="list-的声明有两种"><a href="#list-的声明有两种" class="headerlink" title="list 的声明有两种"></a>list 的声明有两种</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ ①、声明的同时进行赋值</span><br><span class="line">     list1 = [1,<span class="string">'two'</span>,True]</span><br><span class="line"> ②、声明一个空列表，后续进行添加元素</span><br><span class="line">     list2 = list()  生成的列表里面没有值，长度为0</span><br></pre></td></tr></table></figure>
-<h3 id="列表的"><a href="#列表的" class="headerlink" title="列表的"></a>列表的</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">$ (1)、使用appen()进行增加，在列表的尾部添加一个元素。</span><br><span class="line">        list1 = [1,<span class="string">'two'</span>,True]</span><br><span class="line">        list1.append(3)</span><br><span class="line">        [1, <span class="string">'two'</span>, True, 3]</span><br><span class="line">$（2）、使用extend()进行增加，在列表尾部添加一个子列表</span><br><span class="line">        list1 = [1,<span class="string">'two'</span>,True]</span><br><span class="line">        list1.extend([3,4])</span><br><span class="line">        [1, <span class="string">'two'</span>, True, 3, 4]</span><br><span class="line">$（3）、使用“+”运算符，连接两个列表，生成一个新的列表。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">$（4）、使用insert()（索引位，插入的内容）函数，对列表指定位置插入内容。</span><br><span class="line">         list1 = [1,<span class="string">'two'</span>,True]</span><br><span class="line">         list1.insert([1,<span class="string">'我是插入的'</span>)</span><br><span class="line">         [1, <span class="string">'我是插入的'</span>, <span class="string">'two'</span>, True]</span><br><span class="line">注意：通常使用append和extend来实现添加元素，而insert频繁的插入操作，需要消耗内存来维护索引位的变化。</span><br></pre></td></tr></table></figure>
-<h3 id="列表的修改"><a href="#列表的修改" class="headerlink" title="列表的修改"></a>列表的修改</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ 通过索引位查到指定的元素，进行修改</span><br><span class="line">    list1 = [1,2,3,5]</span><br><span class="line">    list1[3]= 4</span><br><span class="line">    [1,2,3,4]</span><br></pre></td></tr></table></figure>
-<h3 id="列表的删除"><a href="#列表的删除" class="headerlink" title="列表的删除"></a>列表的删除</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">$ （1）、remove(要删除的元素)移除在列表中指定的元素</span><br><span class="line">    list1.remove(元素)</span><br><span class="line">$（2）、pop()有两种使用（pop（）可以将移除的元素返回）</span><br><span class="line">    list1.pop() 缺省情况下，从列表的尾部弹出一个元素，列表为空，执行pop（）会报错，提示</span><br><span class="line">    列表为空</span><br><span class="line">    返回值：返回弹出的元素</span><br><span class="line">    list1.pop（index）弹出指定位置的元素</span><br><span class="line">$（3）、del 删除列表的指定元素或列表本身</span><br><span class="line">         del list[索引位]</span><br><span class="line">        list2 = [1,2,3,4,5,6,7]</span><br><span class="line">        del list2[3:5]</span><br><span class="line">        [1, 2, 3, 6, 7]</span><br></pre></td></tr></table></figure>
-<h3 id="补充知识"><a href="#补充知识" class="headerlink" title="补充知识"></a>补充知识</h3><p><code>`</code> bash<br>$  一、<br> (1)、<br>list1 = [‘hello world’]<br>li2 = []<br>for i in list1 :<br>    li2.append(i)<br>(2)、<br>li2 = [i for i in list1]         </p>
-<p>这两种方法结果是相同的，</p>
-<p>二、<br>(1)、字符串的反转<br>li.[-1::-1] 与i.reverse()   两种方法的结果是相同的</p>
+<h3 id="list-的声明有两种"><a href="#list-的声明有两种" class="headerlink" title="list 的声明有两种"></a>list 的声明有两种</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">①、声明的同时进行赋值</span><br><span class="line">     list1 = [1,<span class="string">'two'</span>,True]</span><br><span class="line"> ②、声明一个空列表，后续进行添加元素</span><br><span class="line">     list2 = list()  生成的列表里面没有值，长度为0</span><br></pre></td></tr></table></figure>
+<h3 id="列表的"><a href="#列表的" class="headerlink" title="列表的"></a>列表的</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">(1) 、使用appen()进行增加，在列表的尾部添加一个元素。</span><br><span class="line">        list1 = [1,<span class="string">'two'</span>,True]</span><br><span class="line">        list1.append(3)</span><br><span class="line">        [1, <span class="string">'two'</span>, True, 3]</span><br><span class="line">（2）、使用extend()进行增加，在列表尾部添加一个子列表</span><br><span class="line">        list1 = [1,<span class="string">'two'</span>,True]</span><br><span class="line">        list1.extend([3,4])</span><br><span class="line">        [1, <span class="string">'two'</span>, True, 3, 4]</span><br><span class="line">（3）、使用“+”运算符，连接两个列表，生成一个新的列表。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">$（4）、使用insert()（索引位，插入的内容）函数，对列表指定位置插入内容。</span><br><span class="line">         list1 = [1,<span class="string">'two'</span>,True]</span><br><span class="line">         list1.insert([1,<span class="string">'我是插入的'</span>)</span><br><span class="line">         [1, <span class="string">'我是插入的'</span>, <span class="string">'two'</span>, True]</span><br><span class="line">注意：通常使用append和extend来实现添加元素，而insert频繁的插入操作，需要消耗内存来维护索引位的变化。</span><br></pre></td></tr></table></figure>
+<h3 id="列表的修改"><a href="#列表的修改" class="headerlink" title="列表的修改"></a>列表的修改</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">通过索引位查到指定的元素，进行修改</span><br><span class="line">    list1 = [1,2,3,5]</span><br><span class="line">    list1[3]= 4</span><br><span class="line">    [1,2,3,4]</span><br></pre></td></tr></table></figure>
+<h3 id="列表的删除"><a href="#列表的删除" class="headerlink" title="列表的删除"></a>列表的删除</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">（1）、remove(要删除的元素)移除在列表中指定的元素</span><br><span class="line">    list1.remove(元素)</span><br><span class="line">（2）、pop()有两种使用（pop（）可以将移除的元素返回）</span><br><span class="line">    list1.pop() 缺省情况下，从列表的尾部弹出一个元素，列表为空，执行pop（）会报错，提示</span><br><span class="line">    列表为空</span><br><span class="line">    返回值：返回弹出的元素</span><br><span class="line">    list1.pop（index）弹出指定位置的元素</span><br><span class="line">$（3）、del 删除列表的指定元素或列表本身</span><br><span class="line">         del list[索引位]</span><br><span class="line">        list2 = [1,2,3,4,5,6,7]</span><br><span class="line">        del list2[3:5]</span><br><span class="line">        [1, 2, 3, 6, 7]</span><br></pre></td></tr></table></figure>
+<h3 id="补充知识"><a href="#补充知识" class="headerlink" title="补充知识"></a>补充知识</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">$  一、</span><br><span class="line"> (1)、</span><br><span class="line">list1 = [<span class="string">'hello world'</span>] </span><br><span class="line">li2 = []</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> list1 :</span><br><span class="line">    li2.append(i)</span><br><span class="line">(2)、</span><br><span class="line">li2 = [i <span class="keyword">for</span> i <span class="keyword">in</span> list1]         </span><br><span class="line"></span><br><span class="line">这两种方法结果是相同的，</span><br><span class="line"></span><br><span class="line">二、</span><br><span class="line">(1)、字符串的反转</span><br><span class="line">li.[-1::-1] 与i.reverse()   两种方法的结果是相同的</span><br></pre></td></tr></table></figure>
+<h2 id="元组"><a href="#元组" class="headerlink" title="元组"></a>元组</h2><p>tuple元组，可以存储各种数据类型（数值，字符串，布尔型等）；元组一旦被生成里面的数据不会发生改变；元组也是有序的，可以用索引位进行遍历。</p>
+<h3 id="元组的声明"><a href="#元组的声明" class="headerlink" title="元组的声明"></a>元组的声明</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> ①、tuple1 = 1,2,3</span><br><span class="line"> ②、tuple1 = (1,2,3)</span><br><span class="line">注意：元组在进行赋值，只有一个值时，应在最后加上逗号。如果只有一个元素，而没有进行逗号的分割，那么变量类型并不是元组</span><br></pre></td></tr></table></figure>
+<h3 id="元组的操作"><a href="#元组的操作" class="headerlink" title="元组的操作"></a>元组的操作</h3><pre><code class="bash">(1)、生成一个空元组
+tuple1 = tuple()
+(2)、函数
++：连接元组，生成一个新的元组
+*：生成连续的元素个数
+len(元组):返回元组的长度
+max(元组)：返回元组中最大值
+min(元组)：返回元组中最小值
+sum(元组):返回元组中所有元素之和
+注意：不能对元组中的元素进行增加、删除、修改的操作。
+(3)、将列表转化为元组
+list1 = [1,2,3]
+tuple1 = tuple(list1)=&gt;(1,2,3)
+</code></pre>
 
       
 
