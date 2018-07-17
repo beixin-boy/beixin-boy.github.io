@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018/7 | 贝心</title>
+  <title>字典类型 | 贝心</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="python、爬虫、大数据">
-<meta property="og:type" content="website">
-<meta property="og:title" content="贝心">
-<meta property="og:url" content="http://yoursite.com/archives/2018/07/index.html">
+  <meta name="description" content="字典的概念  字典数据类型，由key=value结构构成的。也就是说字典类型中的每个元素都是有两部分构成，中间使用冒号” ：”连接。其中，key和value的可以是任意数据类型的内容。key的值是不可变的所以不能为不可哈希的数据类型 字典的生成123456789$第一种、dic = &amp;#123;1:&apos;one&apos;,2:&apos;two&apos;,3:&apos;three&apos;&amp;#125;，两边使用一对&amp;#123;&amp;#125;来界">
+<meta name="keywords" content="python、爬虫、大数据">
+<meta property="og:type" content="article">
+<meta property="og:title" content="字典类型">
+<meta property="og:url" content="http://yoursite.com/2018/07/16/python_dict/index.html">
 <meta property="og:site_name" content="贝心">
+<meta property="og:description" content="字典的概念  字典数据类型，由key=value结构构成的。也就是说字典类型中的每个元素都是有两部分构成，中间使用冒号” ：”连接。其中，key和value的可以是任意数据类型的内容。key的值是不可变的所以不能为不可哈希的数据类型 字典的生成123456789$第一种、dic = &amp;#123;1:&apos;one&apos;,2:&apos;two&apos;,3:&apos;three&apos;&amp;#125;，两边使用一对&amp;#123;&amp;#125;来界">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-17T13:46:04.709Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="贝心">
+<meta name="twitter:title" content="字典类型">
+<meta name="twitter:description" content="字典的概念  字典数据类型，由key=value结构构成的。也就是说字典类型中的每个元素都是有两部分构成，中间使用冒号” ：”连接。其中，key和value的可以是任意数据类型的内容。key的值是不可变的所以不能为不可哈希的数据类型 字典的生成123456789$第一种、dic = &amp;#123;1:&apos;one&apos;,2:&apos;two&apos;,3:&apos;three&apos;&amp;#125;，两边使用一对&amp;#123;&amp;#125;来界">
   
     <link rel="alternative" href="/atom.xml" title="贝心" type="application/atom+xml">
   
@@ -151,157 +155,163 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-python_dict" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      字典类型
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/16/python_dict/" class="archive-article-date">
+
+        
+        <a href="/2018/07/16/python_dict/" class="archive-article-date">
   	<time datetime="2018-07-16T02:29:35.281Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-16</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/16/python_dict/">字典类型</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="字典的概念"><a href="#字典的概念" class="headerlink" title="字典的概念"></a>字典的概念</h2><p>  字典数据类型，由key=value结构构成的。也就是说字典类型中的每个元素都是有两部分构成，中间使用冒号” ：”连接。其中，key和value的可以是任意数据类型的内容。key的值是不可变的所以不能为不可哈希的数据类型</p>
+<h2 id="字典的生成"><a href="#字典的生成" class="headerlink" title="字典的生成"></a>字典的生成</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$第一种、</span><br><span class="line">dic = &#123;1:<span class="string">'one'</span>,2:<span class="string">'two'</span>,3:<span class="string">'three'</span>&#125;，两边使用一对&#123;&#125;来界定。</span><br><span class="line">第二种、</span><br><span class="line">dic = dict()   <span class="comment">#使用dict()函数来生成一个空的字典</span></span><br><span class="line">第三种、</span><br><span class="line">dic = dict(&#123;1:<span class="string">'one'</span>,2:<span class="string">'two'</span>,3:<span class="string">'three'</span>&#125;) <span class="comment">#在使用dict()函数的同时进行赋值</span></span><br><span class="line">第四种、</span><br><span class="line">dict(zip((<span class="string">'id'</span>,<span class="string">'name'</span>,<span class="string">'city'</span>),(23,<span class="string">'wangzhen'</span>,<span class="string">'zhengzhou'</span>)))</span><br><span class="line"><span class="comment">#使用zip()函数 指定对应的元组，分别来作为字典的key和 value，生成zip对象转成字典数据 返回一个zip对象</span></span><br></pre></td></tr></table></figure>
+<h2 id="字典的常用操作"><a href="#字典的常用操作" class="headerlink" title="字典的常用操作"></a>字典的常用操作</h2><h3 id="字典的新增和修改"><a href="#字典的新增和修改" class="headerlink" title="字典的新增和修改"></a>字典的新增和修改</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ dic = &#123;<span class="string">'鹿邑'</span>:<span class="string">'马糊'</span>,<span class="string">'试量'</span>:<span class="string">'狗肉'</span>,<span class="string">'孔集'</span>:<span class="string">'烧鸡'</span>&#125;</span><br><span class="line">dic[<span class="string">'观堂'</span>] = [<span class="string">'麻花'</span>]  <span class="comment">#查看字典是否有key,如果没有直接生成一个新的键值对</span></span><br><span class="line">&#123;<span class="string">'鹿邑'</span>:<span class="string">'马糊'</span>,<span class="string">'试量'</span>:<span class="string">'狗肉'</span>,<span class="string">'孔集'</span>:<span class="string">'烧鸡'</span>,<span class="string">'观堂'</span>:<span class="string">'麻花'</span>&#125;</span><br><span class="line">dic[<span class="string">'鹿邑'</span>]= [<span class="string">'涡河'</span>] <span class="comment">#如果字典中已有指定的key,则将原来的value值覆盖</span></span><br><span class="line">&#123;<span class="string">'鹿邑'</span>:<span class="string">'涡河'</span>,<span class="string">'试量'</span>:<span class="string">'狗肉'</span>,<span class="string">'孔集'</span>:<span class="string">'烧鸡'</span>&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="字典的删除"><a href="#字典的删除" class="headerlink" title="字典的删除"></a>字典的删除</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">$ 第一种、</span><br><span class="line">使用del进行字典内容的删除</span><br><span class="line">del dic[key]    删除指定key对应的value内容</span><br><span class="line">del dic         删除整个字典，并释放其所占内存</span><br><span class="line">第二种、</span><br><span class="line">使用pop()函数，删除指定key对应的value内容</span><br><span class="line">函数格式：dict.pop(key)  ，其中参数为字典中的key值</span><br><span class="line">返回值：返回所删除key对应的value内容</span><br><span class="line">第三种、</span><br><span class="line">使用clear()函数，清空字典中所有内容</span><br><span class="line">函数格式：dict.clear()</span><br><span class="line">返回值：清空字典内容，返回一个空字典</span><br><span class="line">第四种、</span><br><span class="line">popitem()，删除字典中的键值对   </span><br><span class="line">函数格式：dict.popitem()</span><br><span class="line">返回值：会在字典尾部，弹出键值对并删除，将删除的键值对按照元组类型返回</span><br></pre></td></tr></table></figure>
+<h3 id="检索字典"><a href="#检索字典" class="headerlink" title="检索字典"></a>检索字典</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ 第一、</span><br><span class="line">查询指定的value,通过指定的key找到对应的value</span><br><span class="line">dic[1] = &gt; <span class="string">'one'</span></span><br><span class="line">第二、</span><br><span class="line"><span class="keyword">for</span> key <span class="keyword">in</span> dic.keys():</span><br><span class="line">    <span class="built_in">print</span>(key)  <span class="comment">#返回字典中的所有key</span></span><br><span class="line"><span class="keyword">for</span> value <span class="keyword">in</span> dic.values():</span><br><span class="line">    <span class="built_in">print</span>(value) <span class="comment">#返回字典中所有的value</span></span><br><span class="line"><span class="keyword">for</span> item <span class="keyword">in</span> dic.items():</span><br><span class="line">    <span class="built_in">print</span>(item) <span class="comment">#返回字典中的所有键值对</span></span><br></pre></td></tr></table></figure>
+<h3 id="字典与列表、元组的转换"><a href="#字典与列表、元组的转换" class="headerlink" title="字典与列表、元组的转换"></a>字典与列表、元组的转换</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">列表转成字典</span><br><span class="line">list1 = [[1,<span class="string">'one'</span>],[2,<span class="string">'two'</span>],[3,<span class="string">'three'</span>]]</span><br><span class="line">或</span><br><span class="line">list1 = [(1,<span class="string">'one'</span>),(2,<span class="string">'two'</span>),(3,<span class="string">'three'</span>)]</span><br><span class="line">dic = dict(list1)</span><br><span class="line">&#123;1: <span class="string">'one'</span>, 2: <span class="string">'two'</span>, 3: <span class="string">'three'</span>&#125;</span><br><span class="line">元组转成字典</span><br><span class="line">tup = ((1,<span class="string">'one'</span>),(2,<span class="string">'two'</span>),(3,<span class="string">'three'</span>))</span><br><span class="line">dic = dict(tup)</span><br><span class="line">&#123;1: <span class="string">'one'</span>, 2: <span class="string">'two'</span>, 3: <span class="string">'three'</span>&#125;</span><br><span class="line">注意：不管是元组还是列表，其作为key的那个值必须是不可变数据类型。</span><br><span class="line">同时，我们对字典进行新增和修改时，其key可以使用True或False，但是要注意在使用他们时字典会首先对已有的key进行比对，如果有重复的则进行修改（True==1，False==0）</span><br></pre></td></tr></table></figure>
+<h3 id="字典的函数"><a href="#字典的函数" class="headerlink" title="字典的函数"></a>字典的函数</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">(1)、</span><br><span class="line">get()</span><br><span class="line">获得字典中指定key对应的value内容</span><br><span class="line">函数格式：dict.get(key)</span><br><span class="line">返回值：返回指定key对应的value，如果没有找到则不返回任何内容即返回None。例如：</span><br><span class="line">dic.get(5) == None	   </span><br><span class="line">True</span><br><span class="line">(2)、</span><br><span class="line">setdefault()</span><br><span class="line">返回指定key对应的内容，如果这个key不存在，那么就进行新增</span><br><span class="line">函数格式：dict.setdefault(key[,value]),其中key为键值，如果该key在字典中已经存在，那么不需要填写value参数；如果key值在字典中不存在，需要value参数。</span><br><span class="line">返回值：如果key值存在，返回该key对应的value内容；如果key不存在，则进行新增返回新增的value内容。</span><br><span class="line">(3)、</span><br><span class="line">update()</span><br><span class="line">将新字典中的key=value内容，添加到原有字典尾部，如果新字典内容中有key值与原字典的key值相同，那么就覆盖key值对应的原有value。</span><br><span class="line">函数格式：old_dict.update(new_dict)</span><br><span class="line">返回值：将新字典中的内容，添加到原有字典的尾部。</span><br><span class="line">dic = &#123;<span class="string">'鹿邑'</span>:<span class="string">'马糊'</span>,<span class="string">'试量'</span>:<span class="string">'狗肉'</span>,<span class="string">'孔集'</span>:<span class="string">'烧鸡'</span>,<span class="string">'观堂'</span>:<span class="string">'麻花'</span>&#125;</span><br><span class="line">dic2 = &#123;<span class="string">'one'</span>:<span class="string">'美式咖啡'</span>,<span class="string">'two'</span>:<span class="string">'拿铁'</span>,<span class="string">'three'</span>:<span class="string">'卡布基诺'</span>,5:<span class="string">'甜甜圈'</span>&#125;</span><br><span class="line">dic.upper(dic2)</span><br><span class="line">&#123;<span class="string">'鹿邑'</span>:<span class="string">'马糊'</span>,<span class="string">'试量'</span>:<span class="string">'狗肉'</span>,<span class="string">'孔集'</span>:<span class="string">'烧鸡'</span>,<span class="string">'观堂'</span>:<span class="string">'麻花'</span>,<span class="string">'one'</span>:<span class="string">'美式咖啡'</span>,<span class="string">'two'</span>:<span class="string">'拿铁'</span>,<span class="string">'three'</span>:<span class="string">'卡布基诺'</span>,5:<span class="string">'甜甜圈'</span>&#125;</span><br><span class="line">(4)、</span><br><span class="line">fromkeys()</span><br><span class="line">通过指定的key集合，生成一个新字典，其value值缺省为None</span><br><span class="line">函数格式：dict.fromkeys(iter1[,value]) 其中iter1为可迭代化集合，比如：列表、元组；value可以是任意数据类型。</span><br><span class="line">返回值：返回一个新字典，其中key为我们在参数中使用的iter1集合，值都为None或者指定的value。</span><br><span class="line">dic3 = dict(&#123;<span class="string">'a'</span>:<span class="string">'one'</span>,<span class="string">'b'</span>:<span class="string">'two'</span>,<span class="string">'c'</span>:<span class="string">'three'</span>&#125;)</span><br><span class="line">a = dic3.fromkeys([1,2,3])</span><br><span class="line">&#123;1: None, 2: None, 3: None&#125;</span><br><span class="line"></span><br><span class="line">dic3 = dict(&#123;<span class="string">'a'</span>:<span class="string">'one'</span>,<span class="string">'b'</span>:<span class="string">'two'</span>,<span class="string">'c'</span>:<span class="string">'three'</span>&#125;)</span><br><span class="line">a = dic3.fromkeys([1,2,3],[<span class="string">'a'</span>,<span class="string">'b'</span>,<span class="string">'c'</span>])</span><br><span class="line">&#123;1: [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>], 2: [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>], 3: [<span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>]&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="一些简单的例子"><a href="#一些简单的例子" class="headerlink" title="一些简单的例子"></a>一些简单的例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">一、</span><br><span class="line">dic = &#123;<span class="string">'new_list'</span>:[<span class="string">'wangzheng'</span>,<span class="string">'zhangsan'</span>,<span class="string">'kongsi'</span>],<span class="string">'address'</span>:&#123;<span class="string">'mengxiang'</span>:<span class="string">'shanghai'</span>,<span class="string">'lairi'</span>:<span class="string">'beijing'</span>&#125;&#125;</span><br><span class="line">dic[<span class="string">'new_list'</span>] = [i.upper() <span class="keyword">for</span> i <span class="keyword">in</span> dic[<span class="string">'new_list'</span>] ]</span><br><span class="line"><span class="built_in">print</span>(dic)</span><br><span class="line"><span class="comment"># 通过推导式进行遍历，将字典中的'new_list'所对应的value值变成大写</span></span><br><span class="line">二、</span><br><span class="line">list1 = []</span><br><span class="line">msg = <span class="string">''</span></span><br><span class="line">dic = &#123;<span class="string">'1'</span>:<span class="string">'手机'</span>,<span class="string">'2'</span>:<span class="string">'电脑'</span>,<span class="string">'3'</span>:<span class="string">'鼠标垫'</span>,<span class="string">'4'</span>:<span class="string">'游艇'</span>&#125; <span class="comment">#生成字典</span></span><br><span class="line">goods_num = (input(<span class="string">'请输入物品序号：'</span>))               <span class="comment">#输入序号</span></span><br><span class="line"><span class="keyword">for</span> key <span class="keyword">in</span> dic.keys():</span><br><span class="line">    list1.append(key)        <span class="comment">#将字典中的所有key添加到空列表list1中</span></span><br><span class="line">    <span class="keyword">if</span> goods_num <span class="keyword">in</span> list1:   <span class="comment">#判断输入的序号是否在list1中</span></span><br><span class="line">        msg = <span class="string">'你要购买的商品为&#123;0&#125;'</span>.format(dic[goods_num])</span><br><span class="line">    <span class="keyword">elif</span> goods_num ==<span class="string">'Q'</span> or goods_num == <span class="string">'q'</span>: <span class="comment">#判断用户是否想退出</span></span><br><span class="line">        msg = <span class="string">'你已退出程序，欢迎下次光临'</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        msg = <span class="string">'你的输入有误，请重新输入'</span>    </span><br><span class="line"><span class="built_in">print</span>(msg)</span><br><span class="line"></span><br><span class="line">三、</span><br><span class="line">tu = (<span class="string">"alex"</span>, [11, 22, &#123;<span class="string">"k1"</span>: <span class="string">'v1'</span>, <span class="string">"k2"</span>: [<span class="string">"age"</span>, <span class="string">"name"</span>], <span class="string">"k3"</span>: (11, 22, 33)&#125;, 44])</span><br><span class="line">tu[1][2][<span class="string">'k2'</span>].append(<span class="string">'Seven'</span>) <span class="comment">#它所返回的值为None 不能使用变量来接。</span></span><br><span class="line"><span class="built_in">print</span>(tu)</span><br><span class="line"><span class="comment">#像这种有很多种数据类型，一定要明白它们所对应的位置，</span></span><br><span class="line">四、</span><br><span class="line">s = <span class="string">'k:1|k1:2|k2:3|k3:4'</span></span><br><span class="line">list2 = []</span><br><span class="line">list1 = s.split(<span class="string">'|'</span>)  <span class="comment">#将字符串转换为列表，使用'|'分割还会产生新的列表</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> list1:       <span class="comment">#通过for 循环把每个列表中的子列表遍历出来</span></span><br><span class="line">    list2.append(i.split(<span class="string">':'</span>)) <span class="comment">#再通过split()函数将字符串拆成列表</span></span><br><span class="line">dic = dict(list2)              <span class="comment">#使用dict()函数就能成功转化为字典</span></span><br><span class="line"> </span><br><span class="line"><span class="built_in">print</span>(dic)</span><br></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/16/python_dict/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/14/python_star/" class="archive-article-date">
-  	<time datetime="2018-07-14T08:52:20.912Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-14</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/07/14/python_star/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">python 基础</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/14/python_star/">python 基础</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/13/python_list/" class="archive-article-date">
-  	<time datetime="2018-07-13T06:42:01.067Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/13/python_list/">列表和元组基础</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/12/wang/" class="archive-article-date">
-  	<time datetime="2018-07-12T07:40:07.391Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/12/wang/">Python 循环语句</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/09/hello-world/" class="archive-article-date">
-  	<time datetime="2018-07-09T12:19:08.040Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/09/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -324,8 +334,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
