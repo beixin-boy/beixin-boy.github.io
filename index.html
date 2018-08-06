@@ -159,6 +159,135 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-python_XML" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/04/python_XML/">XML</a>
+    </h1>
+  
+
+        
+        <a href="/2018/08/04/python_XML/" class="archive-article-date">
+  	<time datetime="2018-08-04T09:51:36.607Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="xml文件"><a href="#xml文件" class="headerlink" title="xml文件"></a>xml文件</h2><p>需要一个xml文件，格式如下：</p>
+<catalog><br>  <car><br>    <brand>比亚迪宋</brand><br>    <company>比亚迪股份有限公司</company><br>    <price>15.8万</price><br>    <coler>red bule yellow</coler><br>    <country> china</country><br><br>  </car><br><br>  <car><br>    <brand>别克</brand><br>    <company>上海通用</company><br>    <price>22.4万</price><br>    <coler>银色</coler><br>    <country>china</country><br>  </car><br></catalog>
+
+<h3 id="xml-的操作"><a href="#xml-的操作" class="headerlink" title="xml 的操作"></a>xml 的操作</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/08/04/python_XML/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-python_Excel" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/08/04/python_Excel/">Excel</a>
+    </h1>
+  
+
+        
+        <a href="/2018/08/04/python_Excel/" class="archive-article-date">
+  	<time datetime="2018-08-04T09:19:55.703Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="要引用的包"><a href="#要引用的包" class="headerlink" title="要引用的包"></a>要引用的包</h2><p>在python里要使用pip 下载 pip install xlwt、pip install xlrd 、pip install xlutils<br>import xlrd         # 读取Excel文件中的数据<br>import xlwt         # 写Excel文件<br>import xlutils<br>from xlutils.copy import copy # Excel 表格不支持重写功能，所以 要拷贝原表格的东西进行操作</p>
+<h3 id="用函数对Excel操作"><a href="#用函数对Excel操作" class="headerlink" title="用函数对Excel操作"></a>用函数对Excel操作</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">def caveExcel(title,data):</span><br><span class="line">   </span><br><span class="line">    <span class="comment"># 生成Excel对象</span></span><br><span class="line">    wbt = xlwt.Workbook()</span><br><span class="line">    <span class="comment"># 生成一个sheet页</span></span><br><span class="line">    sheet = wbt.add_sheet(<span class="string">'人员信息表'</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(title)):</span><br><span class="line">        sheet.write(0, i, title[i])</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> m <span class="keyword">in</span> range(len(data)):</span><br><span class="line">        <span class="keyword">for</span> n <span class="keyword">in</span> range(len(data[m])):</span><br><span class="line">            sheet.write(m+1,n,data[m][n])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    wbt.save(<span class="string">'person.xls'</span>)</span><br><span class="line"></span><br><span class="line">def readExcel(bookname, sheetname):</span><br><span class="line">    <span class="comment"># 打开Excel文件</span></span><br><span class="line">    wb = xlrd.open_workbook(<span class="string">'person.xls'</span>)</span><br><span class="line">    sheet = wb.sheet_by_name(<span class="string">'人员信息表'</span>)</span><br><span class="line">    <span class="comment">#for rownum in range(sheet.nrows):</span></span><br><span class="line">        <span class="comment">#print((sheet.row_values(rownum)))</span></span><br><span class="line">    <span class="built_in">print</span>(sheet.nrows)   <span class="comment"># 输出行数</span></span><br><span class="line">    <span class="built_in">print</span>(sheet.ncols)   <span class="comment"># 输出列数</span></span><br><span class="line">    <span class="keyword">for</span> rownum <span class="keyword">in</span> range(sheet.nrows):</span><br><span class="line">        msg = <span class="string">''</span></span><br><span class="line">        <span class="keyword">for</span> colnum <span class="keyword">in</span> range(sheet.ncols):</span><br><span class="line">            msg = msg + str(sheet.cell(rownum,colnum).value) + <span class="string">' '</span></span><br><span class="line">    <span class="comment">#        print('&#123;0:4d&#125; &#123;1:2d&#125; &#123;2:1d&#125; &#123;3:8d&#125; &#123;4:20d&#125; &#123;5:2d&#125; &#123;6:18d&#125;'.format(sheet.cell(rownum,colnum).value))</span></span><br><span class="line">        <span class="built_in">print</span>(msg)</span><br><span class="line"></span><br><span class="line">def updateExcel(bookname, sheetname):</span><br><span class="line">    wb = xlrd.open_workbook(<span class="string">'person.xls'</span>)</span><br><span class="line">    sheet = wb.sheet_by_name(<span class="string">'人员信息表'</span>)</span><br><span class="line">    new_wb = copy(wb)</span><br><span class="line">    new_sheet = new_wb.get_sheet(0) </span><br><span class="line">    new_sheet.write(1,0,<span class="string">'小明'</span>)</span><br><span class="line">    new_wb.save(<span class="string">'persons.xls'</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">     <span class="comment"># 作为Excel表中的标题名称</span></span><br><span class="line">    title = [<span class="string">'姓名'</span>, <span class="string">'年龄'</span>, <span class="string">'性别'</span>, <span class="string">'出生年月'</span>, <span class="string">'家庭住址'</span>, <span class="string">'婚姻状况'</span>, <span class="string">'身份证号码'</span>]</span><br><span class="line">    <span class="comment"># 生成excel中的数据</span></span><br><span class="line">    data = [</span><br><span class="line">        [<span class="string">'小文'</span>, 22, <span class="string">'女'</span>, <span class="string">'19960102'</span>, <span class="string">'不详'</span>, <span class="string">'不详'</span>, <span class="string">'411111111111111111111'</span>],</span><br><span class="line">        [<span class="string">'孔利'</span>, 23, <span class="string">'男'</span>, <span class="string">'19950909'</span>, <span class="string">'不详'</span>, <span class="string">'不详'</span>, <span class="string">'422222222222222222222'</span>],</span><br><span class="line">        [<span class="string">'小雪'</span>, 22, <span class="string">'男'</span>, <span class="string">'19960809'</span>, <span class="string">'不详'</span>, <span class="string">'不详'</span>, <span class="string">'433333333333333333333'</span>]</span><br><span class="line">    ]</span><br><span class="line">    caveExcel(title,data)</span><br><span class="line">    bookname = <span class="string">'person.xls'</span></span><br><span class="line">    sheetname = <span class="string">'人员信息表'</span></span><br><span class="line">    readExcel(bookname, sheetname)</span><br><span class="line">    updateExcel(bookname, sheetname)</span><br></pre></td></tr></table></figure>
+<h3 id="将评论写入Excel"><a href="#将评论写入Excel" class="headerlink" title="将评论写入Excel"></a>将评论写入Excel</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">from os import path</span><br><span class="line">import xlwt</span><br><span class="line">import xlrd</span><br><span class="line"></span><br><span class="line">data = []</span><br><span class="line">def files(name):</span><br><span class="line">    <span class="keyword">if</span> path.exists(name):</span><br><span class="line">        ls = []</span><br><span class="line">       </span><br><span class="line">        file = open(name,<span class="string">'r'</span>,encoding=<span class="string">'gbk'</span>,errors=<span class="string">'ignore'</span>) </span><br><span class="line">        <span class="keyword">while</span> True:</span><br><span class="line">            a=file.readline()</span><br><span class="line">            <span class="built_in">print</span>(a)</span><br><span class="line">            <span class="keyword">if</span> a == <span class="string">''</span>:</span><br><span class="line">                <span class="built_in">break</span></span><br><span class="line">            </span><br><span class="line">            ls.append(a)</span><br><span class="line">        </span><br><span class="line">        data.append(ls)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'该文件不存在'</span>)</span><br><span class="line">def new_excel(title,data):</span><br><span class="line">    web = xlwt.Workbook()</span><br><span class="line">    sheet = web.add_sheet(<span class="string">'评论表'</span>)</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(title)):</span><br><span class="line">        sheet.write(0,i,title[i])</span><br><span class="line">    <span class="keyword">for</span> m <span class="keyword">in</span> range(len(data)):</span><br><span class="line">        <span class="keyword">for</span> n <span class="keyword">in</span> range(len(data[m])):</span><br><span class="line">            sheet.write(n+1,m,data[m][n])</span><br><span class="line">    web.save(<span class="string">'jingdong1.xls'</span>)   </span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ ==<span class="string">'__main__'</span>:</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> k <span class="keyword">in</span> range(1,11):</span><br><span class="line">         files(<span class="string">'Data'</span>+str(k)+<span class="string">'.txt'</span>)  <span class="comment">#有十个文件，文件名字要有规律</span></span><br><span class="line"></span><br><span class="line">    title =[<span class="string">'文件1评论'</span>,<span class="string">'文件2评论'</span>,<span class="string">'文件3评论'</span>,<span class="string">'文件4评论'</span>,<span class="string">'文件5评论'</span>,<span class="string">'文件6评论'</span>,<span class="string">'文件7评论'</span>,<span class="string">'文件8评论'</span>,<span class="string">'文件9评论'</span>,<span class="string">'文件10评论'</span>]</span><br><span class="line">    new_excel(title,data)</span><br></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/08/04/python_Excel/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-python_file" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -722,149 +851,10 @@ tuple1 = tuple(list1) =&gt; (1,2,3)
 
 
   
-    <article id="post-wang" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/12/wang/">Python 循环语句</a>
-    </h1>
-  
-
-        
-        <a href="/2018/07/12/wang/" class="archive-article-date">
-  	<time datetime="2018-07-12T07:40:07.391Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-12</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="有for-和-while"><a href="#有for-和-while" class="headerlink" title="有for 和 while"></a>有for 和 while</h2><p>循环语句有利与更好的进行运算，包括for 和 while 两种循环。<br>for循环有两种格式：<br>第一种：<br>for i in 字符串：<br>    print(i)<br>这种方式可以遍历出字符串所有字符。<br>第二种：<br>for i in range(范围)：<br>其中range(次数) 表示循环的次数，从0开始<br>range(开始，次数，步长)规定开始的位置，循环的次数，和步长。</p>
-<p>for 循环里可以嵌套另一个for 循环<br>for i in :<br>    for i in :<br>while循环<br>格式：while 条件：<br>          代码</p>
-<p>break 和 continue</p>
-<p>break 是符合条件就终止循环<br>continue:是符合条件就跳过此次循环，进行下次循环，并没有退出循环。</p>
-<h3 id="简单循环例子"><a href="#简单循环例子" class="headerlink" title="简单循环例子"></a>简单循环例子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">$ sky = <span class="string">'hehrksjh'</span>     <span class="comment">#可以将sky的内容遍历出来</span></span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> sky:</span><br><span class="line">    <span class="built_in">print</span>(x,end =<span class="string">''</span>)</span><br><span class="line"><span class="keyword">for</span> k <span class="keyword">in</span> range (len(sky)):   <span class="comment">#这是另一种遍历sky的方法</span></span><br><span class="line">    <span class="built_in">print</span>(sky[k],end=<span class="string">''</span>)</span><br><span class="line"></span><br><span class="line">sum1 = 0</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range (1,101,2):   <span class="comment">#1到100的奇数相加</span></span><br><span class="line">    sum1 = sum1+i</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line"><span class="built_in">print</span>(sum1)</span><br><span class="line"></span><br><span class="line">sum2 = 0</span><br><span class="line"><span class="keyword">for</span> k <span class="keyword">in</span> range(0,101,2):    <span class="comment">#0 到100的偶数相加</span></span><br><span class="line">    sum2 = sum2+k</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(sum2)</span><br><span class="line"></span><br><span class="line">sum1 =0</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range (1,101):</span><br><span class="line">    a=1</span><br><span class="line">    <span class="keyword">if</span> i %2 != 0:</span><br><span class="line">        <span class="keyword">for</span> k <span class="keyword">in</span> range (1,i+1):  <span class="comment">#1到100 的阶乘相加</span></span><br><span class="line">            a = a*k</span><br><span class="line">        sum1 = sum1+a</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line"><span class="built_in">print</span>(sum1)</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="中度"><a href="#中度" class="headerlink" title="中度"></a>中度</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">$ count = 2</span><br><span class="line">msg = <span class="string">''</span></span><br><span class="line"><span class="keyword">while</span> count &gt;= 0:</span><br><span class="line">    name = input(<span class="string">'请输入用户'</span>)         <span class="comment">#用户输入密码，输入正确则进入界面</span></span><br><span class="line">    psw = input(<span class="string">'请输入密码'</span>)          <span class="comment">#如果宿儒有误，则提醒用户输入有误</span></span><br><span class="line">    <span class="keyword">if</span> name == <span class="string">'wangzhen'</span>and psw == <span class="string">'12345'</span>: <span class="comment">#并告知还有几次机会</span></span><br><span class="line">        msg = <span class="string">'欢迎回来'</span>                <span class="comment">#如果机会使用完毕，则提醒重置</span></span><br><span class="line">        <span class="built_in">break</span>                          <span class="comment">#并退出循环</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="keyword">if</span> count &gt;0:</span><br><span class="line">            msg = <span class="string">'用户名或密码错误！你还有&#123;0&#125;'</span>.format(count)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            msg = <span class="string">'你的三次机会已经使用完毕，请重置密码'</span></span><br><span class="line">            <span class="built_in">break</span></span><br><span class="line">    count = count-1</span><br><span class="line"><span class="built_in">print</span>(msg)</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="困难"><a href="#困难" class="headerlink" title="困难"></a>困难</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">$ words = <span class="string">'苍老师不雅贩毒'</span></span><br><span class="line"><span class="keyword">while</span> True:               <span class="comment">#首先进入循环，所有的都是真</span></span><br><span class="line"></span><br><span class="line">    msg = input(<span class="string">'欢迎进入论坛，发帖请输入 I ;退出请输入 E '</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> msg == <span class="string">'I'</span>:         <span class="comment">#判断所输入的内容是不是I,</span></span><br><span class="line"></span><br><span class="line">        content = input(<span class="string">'请输入帖子内容：'</span>)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> item <span class="keyword">in</span> words:     <span class="comment">#进行words的遍历</span></span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span> item <span class="keyword">in</span> content: <span class="comment"># 用遍历出来的与输入的进行比较</span></span><br><span class="line"></span><br><span class="line">                content = <span class="string">'你输入的内容中，包含敏感词，请重新输入'</span></span><br><span class="line"></span><br><span class="line">                <span class="built_in">break</span> </span><br><span class="line"></span><br><span class="line">        <span class="built_in">print</span>(content)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line"></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'Bye Bye!'</span>)</span><br><span class="line"></span><br><span class="line">        <span class="built_in">break</span></span><br></pre></td></tr></table></figure>
-<h3 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line">冒泡排序:从小到大排序</span><br><span class="line">list1 = [80,100,67,1,34,10]</span><br><span class="line">一、</span><br><span class="line"><span class="keyword">for</span> m <span class="keyword">in</span> range(len(list1)):</span><br><span class="line">    <span class="keyword">for</span> n <span class="keyword">in</span> range(m+1,len(list1)):</span><br><span class="line">        first = list1[m]</span><br><span class="line">        second = list1[n]</span><br><span class="line">        <span class="keyword">if</span> first &lt; second:</span><br><span class="line">            list1[m] = list1[n]</span><br><span class="line">            list1[n] = first</span><br><span class="line"><span class="built_in">print</span>(list1)</span><br><span class="line"></span><br><span class="line">二、</span><br><span class="line">tup = [ 10,8,-1,100,200, 35]</span><br><span class="line">def maxc(tup):</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(tup)):</span><br><span class="line">        <span class="keyword">for</span> m <span class="keyword">in</span> range(len(tup)):</span><br><span class="line">            <span class="keyword">if</span> tup[i]&lt;tup[m]:<span class="comment">#小于号 是从小到大;大于号 是从大到小</span></span><br><span class="line">                tup[i],tup[m] = tup[m],tup[i]</span><br><span class="line">                </span><br><span class="line">    <span class="built_in">return</span> tup  </span><br><span class="line">            </span><br><span class="line">a = maxc(tup)</span><br><span class="line"><span class="built_in">print</span>(a)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">五种星号图案</span><br><span class="line"></span><br><span class="line">第一种</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(0,5):</span><br><span class="line">    <span class="keyword">for</span> k <span class="keyword">in</span> range (0,i+1):</span><br><span class="line"></span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'*'</span>,end = <span class="string">' '</span>)</span><br><span class="line">    <span class="built_in">print</span>()</span><br><span class="line"></span><br><span class="line">第二种</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range (0,5):</span><br><span class="line">    <span class="keyword">for</span> k <span class="keyword">in</span> range(0,5-i):            </span><br><span class="line">        <span class="built_in">print</span>(<span class="string">' '</span>,end=<span class="string">' '</span>)          </span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(i+1):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'*'</span>,end =<span class="string">' '</span>)</span><br><span class="line">    <span class="built_in">print</span>()</span><br><span class="line"></span><br><span class="line">第三种</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(0,5):</span><br><span class="line">    <span class="keyword">for</span> k <span class="keyword">in</span> range(0,5-i):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'*'</span>,end=<span class="string">' '</span>)</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(0,5):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">' '</span>,end=<span class="string">' '</span>)</span><br><span class="line">    <span class="built_in">print</span>()</span><br><span class="line">第四种</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(0,5):</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(0,i+1):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">' '</span>,end=<span class="string">' '</span>)</span><br><span class="line">    <span class="keyword">for</span> k <span class="keyword">in</span> range(0,5-i):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'*'</span>,end = <span class="string">' '</span>)</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">print</span>()</span><br><span class="line"></span><br><span class="line">第五种</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range (0,5):</span><br><span class="line">    <span class="keyword">for</span> k <span class="keyword">in</span> range (0,4-i):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">' '</span>,end = <span class="string">' '</span>)</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(0,i+1):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'*'</span>,end=<span class="string">' '</span>)</span><br><span class="line">    <span class="keyword">for</span> n <span class="keyword">in</span> range (i):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">'*'</span>,end = <span class="string">' '</span>)</span><br><span class="line">    <span class="built_in">print</span>()</span><br><span class="line"></span><br><span class="line">数据去重</span><br><span class="line">l = [1,1,2,2,3,4,4]</span><br><span class="line">s = list()</span><br><span class="line">[s.append(i) <span class="keyword">for</span> i <span class="keyword">in</span> l <span class="keyword">if</span> i not <span class="keyword">in</span> s]  <span class="comment">#推导式</span></span><br><span class="line"><span class="built_in">print</span>(s)</span><br></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/07/12/wang/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/09/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2018/07/09/hello-world/" class="archive-article-date">
-  	<time datetime="2018-07-09T12:19:08.040Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-09</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/07/09/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
